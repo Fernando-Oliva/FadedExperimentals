@@ -62,19 +62,7 @@ textarea {
 
 
 /*Faded experimentals*/
-#container
-{
-    height:2000px;    
-}
-
-#container DIV
-{ 
-    margin:50px; 
-    padding:50px; 
-    background-color:lightgreen; 
-}
-
-.hideme
-{
-    opacity:0;
-}
+body { color:#333; font:12px 'segoe ui', sans-serif; }
+span { top:1em; left:1em; position:fixed; }
+#tiles { margin:20px 0; }
+#tiles div { width:400px; height:50px; margin:20em auto; background:white; text-align:center; font-size:20px;}

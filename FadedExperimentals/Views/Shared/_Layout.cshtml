@@ -15,28 +15,15 @@
     @RenderSection("scripts", required: false)
 </body>
 <script type="text/javascript">
-    $(document).ready(function () {
+    tiles = $("div#tiles div").fadeTo(0, 0);
 
-        /* Every time the window is scrolled ... */
-        $(window).scroll(function () {
-
-            /* Check the location of each desired element */
-            $('.hideme').each(function (i) {
-
-                var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                /* If the object is completely visible in the window, fade it it */
-                if (bottom_of_window > bottom_of_object) {
-
-                    $(this).animate({ 'opacity': '1' }, 500);
-
-                }
-
-            });
-
+    $(window).scroll(function (d, h) {
+        tiles.each(function (i) {
+            a = $(this).offset().top + $(this).height();
+            b = $(window).scrollTop() + $(window).height();
+            if (a < b) $(this).fadeTo(500, 1);
         });
-
     });
+
     </script>
 </html>
