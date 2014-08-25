@@ -6,35 +6,7 @@
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script type="text/javascript">
-        function update() {
-            if ($(window).scrollTop() > 400) {
-                $('.signup_scroll').animate({
-                    "bottom": '90px'
-                }, 300);
-            } else {
-                $('.signup_scroll').animate({
-                    "bottom": '-90px'
-                }, 300);
-            }
-        }
-
-        setInterval(update, 500);
-
-        function update2() {
-            if ($(window).scrollTop() > 800) {
-                $('.signup_scroll2').animate({
-                    "bottom": '0px'
-                }, 600);
-            } else {
-                $('.signup_scroll2').animate({
-                    "bottom": '-90px'
-                }, 600);
-            }
-        }
-
-        setInterval(update2, 500);
-    </script>
+    
 </head>
 <body>
     @RenderBody()
@@ -42,4 +14,29 @@
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        /* Every time the window is scrolled ... */
+        $(window).scroll(function () {
+
+            /* Check the location of each desired element */
+            $('.hideme').each(function (i) {
+
+                var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                /* If the object is completely visible in the window, fade it it */
+                if (bottom_of_window > bottom_of_object) {
+
+                    $(this).animate({ 'opacity': '1' }, 500);
+
+                }
+
+            });
+
+        });
+
+    });
+    </script>
 </html>
