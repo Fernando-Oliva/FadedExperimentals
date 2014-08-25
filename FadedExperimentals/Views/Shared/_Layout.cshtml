@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type="text/javascript">
+        function update() {
+            if ($(window).scrollTop() > 400) {
+                $('.signup_scroll').animate({
+                    "bottom": '0px'
+                }, 300);
+            } else {
+                $('.signup_scroll').animate({
+                    "bottom": '-90px'
+                }, 300);
+            }
+        }
+
+        setInterval(update, 500);
+
+        function update2() {
+            if ($(window).scrollTop() > 800) {
+                $('.signup_scroll2').animate({
+                    "bottom": '0px'
+                }, 600);
+            } else {
+                $('.signup_scroll2').animate({
+                    "bottom": '-90px'
+                }, 600);
+            }
+        }
+
+        setInterval(update2, 500);
+    </script>
+</head>
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
