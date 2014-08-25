@@ -79,7 +79,7 @@ html,body{
 
 
 .col {
-  width: 25%;
+  width: 50%;
 	-webkit-box-sizing: border-box; 
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -118,6 +118,7 @@ background: #ccc;}
 .shot
 {
 	height:400px;
+	width:800px;
 	background-color:#99D6FF;
 	border-bottom: 3px solid #E8E8E8;
 	border-radius:10px;
@@ -126,7 +127,54 @@ background: #ccc;}
 .shot2
 {
 	height:400px;
+	width:800px;
 	background-color:#FF8080;
 	border-bottom: 3px solid #E8E8E8;
 	border-radius:10px;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back 
+{
+	width:371px;
+	height: 400px;
+	border-bottom: 3px solid #E8E8E8;
+	border-radius:10px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	background-color:#FF8080;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+	background-color:#99D6FF;
 }

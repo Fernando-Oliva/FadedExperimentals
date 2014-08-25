@@ -44,5 +44,17 @@
         });
     });
 
+
+    shot3 = $(".shot3").fadeTo(0, 0);
+
+    $('.container').scroll(function (d, h) {
+        shot3.each(function (i) {
+            a = $(this).offset().top + $(this).height();
+            b = $('#portfolio').scrollTop() + $('.container').height();
+            if (a < b)
+            { $(this).fadeTo(800, 1); }
+
+        });
+    });
     </script>
 </html>
