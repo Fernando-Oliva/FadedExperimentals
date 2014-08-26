@@ -134,8 +134,10 @@
     <Content Include="Content\Images\blank_blackboard.jpg" />
     <Content Include="Content\Images\cuadernolapiz.png" />
     <Content Include="Content\Images\havas-media-logo-2013.jpg" />
+    <Content Include="Content\Images\logointegrate.png" />
     <Content Include="Content\Images\logo_havasmedia.png" />
     <Content Include="Content\Images\notebook-with-pencil.jpg" />
+    <Content Include="Content\Images\open_window_winter.jpg" />
     <Content Include="Content\Images\paper.png" />
     <Content Include="Content\Images\pencil_real.png" />
     <Content Include="Content\Images\tileable_wood_texture_by_ftIsis_Stock.jpg" />
