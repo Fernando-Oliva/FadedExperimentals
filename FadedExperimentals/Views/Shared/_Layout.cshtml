@@ -8,6 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"
     type="text/javascript"></script>
+    
 </head>
 
 
@@ -56,5 +57,18 @@
 
         });
     });
+
+
+    function launch() {
+        op = $('.shot').css('opacity');
+
+        if ($('.shot').css('opacity') == 1) {
+            $('.shot').hover(function () {
+                $('.hov1').fadeIn();
+            }, function () {
+                $('.hov1').fadeOut();
+            });
+        }
+    }
     </script>
 </html>

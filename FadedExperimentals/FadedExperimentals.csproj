@@ -129,6 +129,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Images\cuadernolapiz.png" />
+    <Content Include="Content\Images\havas-media-logo-2013.jpg" />
+    <Content Include="Content\Images\logo_havasmedia.png" />
+    <Content Include="Content\Images\notebook-with-pencil.jpg" />
+    <Content Include="Content\Images\paper.png" />
+    <Content Include="Content\Images\pencil_real.png" />
+    <Content Include="Content\Images\tileable_wood_texture_by_ftIsis_Stock.jpg" />
+    <Content Include="Content\Images\Wood_by_Breyer_Stock.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -222,6 +231,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\Bemio Italic.otf" />
+    <None Include="Content\Fonts\Bemio.otf" />
+    <None Include="Content\Fonts\BLANCH_CAPS.otf" />
+    <None Include="Content\Fonts\BLANCH_CAPS_INLINE.otf" />
+    <None Include="Content\Fonts\BLANCH_CAPS_LIGHT.otf" />
+    <None Include="Content\Fonts\BLANCH_CONDENSED.otf" />
+    <None Include="Content\Fonts\BLANCH_CONDENSED_INLINE.otf" />
+    <None Include="Content\Fonts\BLANCH_CONDENSED_LIGHT.otf" />
+    <None Include="Content\Fonts\Hug Me Tight.ttf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

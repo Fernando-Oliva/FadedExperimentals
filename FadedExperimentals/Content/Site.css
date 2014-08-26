@@ -68,7 +68,9 @@ textarea {
 /*Faded experimentals*/
 .sp
 {
-	font-size:40px;
+	font-size:60px;
+	font-family:Bemio;
+	margin-top:20px;
 }
 
 html,body{
@@ -91,9 +93,7 @@ html,body{
  margin: 0 auto;
 }
 
-.col img {
-  width: 100%;
-}
+
 
 .col h3 {
   width: 100%;
@@ -104,9 +104,10 @@ html,body{
 .col p {
   width: 100%;
   padding:0px 3px 10px 3px;
-  margin:0;
-  font-weight: 100;
-  font-size: 12px;
+  
+
+  font-family:Bemio;
+	font-size:30px;
 }
 
 h1 {
@@ -127,15 +128,51 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
 background-color:#282828;
 background-size:16px 16px;}
 
+.hov1
+{
+	height:200px;
+	width:290px;
+	padding-top:10px;
+	background: url("../../Content/Images/paper.png") no-repeat;
+	
+	background-size: 295px 200px;
+	float:left;
+	margin-left:82px;
+	margin-top:100px;
+	display:none;
+	border-radius:15px;
+	font-family:Hug Me Tight;
+	}
+
+.companyname
+{
+	font-family:Bemio;
+	font-size:40px;
+}
+
+.description
+{
+	margin-top:140px;
+	font-family:Bemio;
+}
+
 .shot
 {
 	height:400px;
 	width:800px;
-	background-color:#99D6FF;
+
+	background: url("../../Content/Images/bg.jpg") no-repeat;
+	background-size: 800px 403px;
 	border-bottom: 3px solid #E8E8E8;
 	border-radius:10px;
+	text-align:center;
 }
 
+
+.imgHavas
+{
+	margin-top:40px;
+}
 .shot2
 {
 	height:400px;
