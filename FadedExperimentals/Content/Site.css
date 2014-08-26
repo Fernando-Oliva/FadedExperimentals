@@ -13,7 +13,32 @@ header, footer, nav, section {
     display: block;
 }
 
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #A8A8A8;
+	margin: 10px auto 10px auto;
+}
 
+footer
+{
+	background: url("../../Content/Images/blank_blackboard.jpg") no-repeat;
+	height:200px;
+	text-align:center;
+	}
+	
+.becode
+{
+	color:White;
+	}
+	
+.becodediv
+{
+	margin-bottom: 10px;
+}
 /* Styles for basic forms
 -----------------------------------------------------------*/
 fieldset {
@@ -123,10 +148,8 @@ h1, h2 {
 	color:#F8F8F8 ;
 	font-size:20px;
 	font-family:Mf Summertime;
-	float:right;
-	margin-top:220px;
-
-	margin-right:10px;
+	margin-top:10px;
+	
 	}
 	
 .rss a
@@ -141,17 +164,18 @@ h1
 	
 	font-size:80px;
 	top:30%;
+	opacity:0.9;
 }
 
 h2
 {
 	font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-	top:45%;
+	top:65%;
 }
 
 #hello 
 {
-    height:400px; 
+    height:100%; 
     width:100%; 
 
 	background: url("../../Content/Images/blank_blackboard.jpg") no-repeat;
@@ -196,6 +220,7 @@ h2
 	height:400px;
 	width:800px;
 	margin: 0 auto;
+	margin-bottom:20px;
 	background: url("../../Content/Images/bg.jpg") no-repeat;
 	background-size: 800px 403px;
 	border-bottom: 3px solid #E8E8E8;
@@ -207,15 +232,20 @@ h2
 .imgHavas
 {
 	margin-top:40px;
+	opacity:0.8;
 }
 
-
+.imgIntegrate
+{	
+	opacity:0.9;
+}
 
 .shot2
 {
 	height:400px;
 	width:800px;
 	margin: 0 auto;
+	margin-bottom:20px;
 	background: url("../../Content/Images/open_window_winter.jpg") no-repeat;
 	background-size: 800px 403px;
 	border-bottom: 3px solid #E8E8E8;

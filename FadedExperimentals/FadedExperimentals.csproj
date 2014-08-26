@@ -129,6 +129,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\6-Colorful-Grungy-Texture01.jpg" />
     <Content Include="Content\Images\bg.jpg" />
     <Content Include="Content\Images\blackboard-with-chalk.jpg" />
     <Content Include="Content\Images\blank_blackboard.jpg" />
