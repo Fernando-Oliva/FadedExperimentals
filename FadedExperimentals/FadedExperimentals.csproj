@@ -130,6 +130,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\bg.jpg" />
+    <Content Include="Content\Images\blackboard-with-chalk.jpg" />
+    <Content Include="Content\Images\blank_blackboard.jpg" />
     <Content Include="Content\Images\cuadernolapiz.png" />
     <Content Include="Content\Images\havas-media-logo-2013.jpg" />
     <Content Include="Content\Images\logo_havasmedia.png" />
@@ -242,6 +244,7 @@
     <None Include="Content\Fonts\BLANCH_CONDENSED_INLINE.otf" />
     <None Include="Content\Fonts\BLANCH_CONDENSED_LIGHT.otf" />
     <None Include="Content\Fonts\Hug Me Tight.ttf" />
+    <None Include="Content\Fonts\Mf Summertime.ttf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
